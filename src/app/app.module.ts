@@ -15,6 +15,8 @@ import { HomeComponent } from './Components/home/home.component';
 import { NavigationComponent } from './Components/navigation/navigation.component';
 import { HistoryComponent } from './Components/history/history.component';
 import { PaymentsComponent } from './Components/payments/payments.component';
+import { AddCardComponent } from './Components/add-card/add-card.component';
+import { ConfirmNumberComponent } from './Components/confirm-number/confirm-number.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { PaymentsComponent } from './Components/payments/payments.component';
     HomeComponent,
     NavigationComponent,
     HistoryComponent,
-    PaymentsComponent
+    PaymentsComponent,
+    AddCardComponent,
+    ConfirmNumberComponent
   ],
   imports: [
     BrowserModule,
