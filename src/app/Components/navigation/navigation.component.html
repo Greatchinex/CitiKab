@@ -1,0 +1,55 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport="true"
+      [ngClass]="{'hidden': !(isHandset$ | async)}"
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="!(isHandset$ | async)">
+    <mat-toolbar style="height: 4em;">
+      <!-- Menu -->
+      <img src="../../../assets/imgs/portrait_small.jpg" alt="Avatar" class="avatar" style="display: block;">
+      <div class="tool-text">
+        <p style="color: #FFA500;">John Doe</p>
+      </div>
+    </mat-toolbar>
+    <mat-nav-list style="margin-top: 1em;">
+      <!-- <a mat-list-item href="#">
+        <mat-icon> favorite_border </mat-icon> <p style="margin-left: 0.4em;"> Free Rides </p>
+      </a> -->
+      <a mat-list-item href="#">
+        <mat-icon> payment </mat-icon> <p style="margin-left: 0.4em;"> Payments </p>
+      </a>
+      <a mat-list-item href="#">
+        <mat-icon> schedule </mat-icon> <p style="margin-left: 0.4em;"> History </p>
+      </a>
+      <!-- <a mat-list-item href="#">
+        <mat-icon> card_giftcard </mat-icon> <p style="margin-left: 0.4em;"> Promotions </p>
+      </a> -->
+      <a mat-list-item href="#">
+        <mat-icon> chat </mat-icon> <p style="margin-left: 0.4em;"> Support </p>
+      </a>
+      <!-- <a mat-list-item href="#">
+        <mat-icon> error_outline </mat-icon> <p style="margin-left: 0.4em;"> About </p>
+      </a> -->
+      <a mat-list-item href="#">
+        <mat-icon> exit_to_app </mat-icon> <p style="margin-left: 0.4em;">Sign Out</p>
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar style="background:#FFA500;">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon" style="color: #fff;">menu</mat-icon>
+      </button>
+      <span class="brand">CitiKab</span>
+    </mat-toolbar>
+    <!-- Add Content Here -->
+    <ng-content>
+
+    </ng-content>
+  </mat-sidenav-content>
+</mat-sidenav-container>
