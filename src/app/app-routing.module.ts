@@ -17,6 +17,7 @@ const routes: Routes = [
   {path: "payments", component: PaymentsComponent},
   {path: "addcard", component: AddCardComponent},
   {path: "confirm", component: ConfirmNumberComponent},
+  {path: "history", component: HistoryComponent},
 ];
 
 @NgModule({

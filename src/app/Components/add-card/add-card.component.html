@@ -1,3 +1,32 @@
-<p>
-  add-card works!
-</p>
+<app-navigation>
+  <section>
+      <div class="container" fxLayoutAlign="center" fxLayoutGap="2em" fxLayout.xs="column">
+        <div fxFlex="45%">
+          <div class="image-div">
+            <img src="../../../assets/imgs/visacard.png" alt="visa Card" height="40.1em">
+            <img src="../../../assets/imgs/mastercard.png" alt="visa Card" height="40.1em" style="margin-left: 2em;">
+            <img src="../../../assets/imgs/american_express.png" alt="visa Card" height="80.1em" style="margin-left: 2em;">
+          </div>
+
+          <p class="text-center; font-size: 1.3em;">
+            Add your card for a seamless ride. We may do temporary booking and return it to your account
+            to validate your card.
+          </p>
+
+          <form>
+            <mat-form-field class="example-full-width">
+              <span matPrefix>
+              <mat-icon>credit_card</mat-icon> &nbsp;
+              </span>
+              <input type="number" matInput placeholder="Card Number">
+            </mat-form-field>
+            <button mat-raised-button class="button">Add Card</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  <!-- So that the bottom of the card can show -->
+<div style="height: 6em;"></div>
+</app-navigation>
+
