@@ -1,0 +1,28 @@
+<app-navigation>
+    <section>
+        <div class="container" fxLayoutAlign="center" fxLayoutGap="2em" fxLayout.xs="column">
+          <div fxFlex="35%">
+            <mat-card align="center">
+              <mat-card-title>
+                <p class="head" fxLayoutAlign="center"><strong> Please Confirm Your Number </strong></p>
+              </mat-card-title>
+              <mat-card-content>
+                <form>
+                  <mat-form-field appearance="outline" fxLayout="column">
+                    <input matInput placeholder="Phone Number *" type="text">
+                    <mat-icon matSuffix> phone </mat-icon>
+                    <!-- <mat-error *ngIf="mainForm.controls['phone'].invalid && mainForm.controls['phone'].touched">
+                      <mat-error *ngIf= "mainForm.controls['phone'].errors.required">Phone Number is <strong>Required</strong></mat-error>  
+                    </mat-error> -->
+                  </mat-form-field>
+                    <button mat-raised-button color="accent" class="login">Confirm</button>
+                  </form>
+              </mat-card-content>
+            </mat-card>
+          </div>
+        </div>
+      </section>
+  
+    <!-- So that the bottom of the card can show -->
+  <div style="height: 6em;"></div>
+  </app-navigation>
