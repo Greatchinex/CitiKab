@@ -1,0 +1,22 @@
+.section1 {
+    margin-top: 2em;
+    height: 100vh;
+}
+
+img {
+    margin-top: 0.8em;
+}
+
+.mat-radio-button {
+    margin-top: 0.8em;
+    margin-left: 10em;
+}
+
+i {
+    margin-top: 0.5em;
+    font-size: 1.8em;
+}
+
+.mat-icon {
+    margin-top: 0.5em;
+}

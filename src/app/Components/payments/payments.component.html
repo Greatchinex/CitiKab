@@ -1,3 +1,51 @@
-<p>
-  payments works!
-</p>
+<app-navigation>
+  <section class="section1">
+    <div class="container" fxLayoutGap="2em" fxLayout.xs="column">
+      <div fxFlex="50%">
+        <mat-list>
+          <p style="font-weight: bold;">Payment Methods</p>
+          <mat-divider></mat-divider>
+
+          <!-- First Item -->
+          <mat-list-item>
+            <span style="display: flex;">
+              <img src="../../../assets/imgs/visacard.png"  height="25.1em" alt="visa card">
+              <p style="margin-left: 1em;"> ****2641 </p>
+              <mat-radio-button></mat-radio-button>
+            </span>
+          </mat-list-item>
+          <mat-divider></mat-divider>
+
+          <!-- Second Item -->
+          <mat-list-item>
+            <span style="display: flex;">
+              <img src="../../../assets/imgs/visacard.png"  height="25.1em" alt="visa card">
+              <p style="margin-left: 1em;"> ****3233 </p>
+              <mat-radio-button></mat-radio-button>
+            </span>
+          </mat-list-item>
+          <mat-divider></mat-divider>
+
+            <!-- Third Item -->
+          <mat-list-item>
+            <span style="display: flex;">
+              <i class="far fa-money-bill-alt"></i>
+              <p style="margin-left: 1em; font-weight: 500;"> Cash </p>
+              <mat-radio-button style="margin-left: 11.5em;"></mat-radio-button>
+            </span>
+          </mat-list-item>
+          <mat-divider></mat-divider>
+
+          <!-- Fourth Item -->
+          <mat-list-item>
+            <span style="display: flex;">
+              <mat-icon> add </mat-icon>
+              <p style="margin-left: 1em; font-weight: 500;"> Add Payment Card </p>
+            </span>
+          </mat-list-item>
+          <mat-divider></mat-divider>
+        </mat-list>
+      </div>
+    </div>
+  </section>
+</app-navigation>

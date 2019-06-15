@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { MatGridListModule, MatCardModule, MatFormFieldModule, MatInputModule, MatDividerModule, MatTabsModule  } from '@angular/material'
+import { MatGridListModule, MatCardModule, MatFormFieldModule, MatInputModule, MatDividerModule, MatRadioModule  } from '@angular/material'
 
 const MaterialComponents = [
   MatGridListModule,
@@ -7,7 +7,7 @@ const MaterialComponents = [
   MatFormFieldModule,
   MatInputModule,
   MatDividerModule,
-  MatTabsModule
+  MatRadioModule 
 ]
 
 
