@@ -1,0 +1,60 @@
+<!-- <app-navigation> -->
+  <section>
+      <div class="container" fxLayoutAlign="center" fxLayoutGap="2em" fxLayout.xs="column">
+        <div fxFlex="35%">
+          <mat-card align="center">
+            <mat-card-title>
+              <p class="head" fxLayoutAlign="center"><strong> Driver SignUp </strong></p>
+            </mat-card-title>
+            <mat-card-content>
+              <form [formGroup]= "mainForm">
+                <!-- I am Having Issues Presentation of the File Upload... The Normal HTML File Upload Looks 
+                Ugly and does Not blend with the rest of the Form and angular material does not have an
+                Input file type...If u can take a look at it and try 2 fix it. -->
+
+                <!-- <label>Upload Your Drivers Liscense</label> -->
+                <p style="text-align: left; font-weight: bold;">Upload Your Drivers Liscense</p>
+                <input type="file" #fileInput>
+
+                <!-- I also tried this option for the file upload -->
+                <!-- <div class="button-row"> <button mat-raised-button color="accent" (click)="imgFileInput.click()"><mat-icon>attachment</mat-icon></button> <input hidden type="file" #imgFileInput/> </div> -->
+
+                <mat-form-field appearance="outline" fxLayout="column">
+                  <input matInput placeholder="Car Company *" type="text" formControlName="carCompany">
+                  <mat-error *ngIf="mainForm.controls['carCompany'].invalid && mainForm.controls['carCompany'].touched">
+                    <mat-error *ngIf= "mainForm.controls['carCompany'].errors.required">Select a Car Company</mat-error>  
+                  </mat-error>
+                </mat-form-field>
+
+                <mat-form-field appearance="outline" fxLayout="column">
+                  <input matInput placeholder="Car Model *" type="text" formControlName="carModel">
+                  <mat-error *ngIf="mainForm.controls['carModel'].invalid && mainForm.controls['carModel'].touched">
+                    <mat-error *ngIf= "mainForm.controls['carModel'].errors.required">Select a Car Model</mat-error>  
+                  </mat-error>
+                </mat-form-field>
+
+                <mat-form-field appearance="outline" fxLayout="column">
+                  <input matInput placeholder="Plate Number *" type="text" formControlName="plateNumber">
+                  <mat-error *ngIf="mainForm.controls['plateNumber'].invalid && mainForm.controls['plateNumber'].touched">
+                    <mat-error *ngIf= "mainForm.controls['plateNumber'].errors.required">Enter a Plate Number</mat-error>  
+                  </mat-error>
+                </mat-form-field>
+            
+                <mat-form-field appearance="outline" fxLayout="column">
+                  <input matInput placeholder="Password" type="password" [type]="hide ? 'password' : 'text'" formControlName="password">
+                  <mat-icon matSuffix (click)="hide = !hide" class="visible"> {{hide ? 'visibility_off': 'visibility'}} </mat-icon>
+                  <mat-error *ngIf="mainForm.controls['password'].invalid && mainForm.controls['password'].touched">
+                    <mat-error *ngIf= "mainForm.controls['password'].errors.required">Password is Required</mat-error>      
+                  </mat-error> 
+                </mat-form-field>
+                  <button mat-raised-button class="login">Sign Up</button>
+                </form>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </div>
+    </section>
+
+  <!-- So that the bottom of the card can show -->
+<div style="height: 6em;"></div>
+<!-- </app-navigation> -->

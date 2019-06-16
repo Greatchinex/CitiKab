@@ -17,6 +17,9 @@ import { HistoryComponent } from './Components/history/history.component';
 import { PaymentsComponent } from './Components/payments/payments.component';
 import { AddCardComponent } from './Components/add-card/add-card.component';
 import { ConfirmNumberComponent } from './Components/confirm-number/confirm-number.component';
+import { DriverSignupComponent } from './Components/DriversComponents/driver-signup/driver-signup.component';
+import { UserRequestComponent } from './Components/DriversComponents/user-request/user-request.component';
+import { ContactUserComponent } from './Components/DriversComponents/contact-user/contact-user.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { ConfirmNumberComponent } from './Components/confirm-number/confirm-numb
     HistoryComponent,
     PaymentsComponent,
     AddCardComponent,
-    ConfirmNumberComponent
+    ConfirmNumberComponent,
+    DriverSignupComponent,
+    UserRequestComponent,
+    ContactUserComponent
   ],
   imports: [
     BrowserModule,

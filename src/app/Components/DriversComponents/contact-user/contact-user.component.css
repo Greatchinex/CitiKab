@@ -1,0 +1,36 @@
+.avatar {
+    vertical-align: middle;
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    margin-top: 1em;
+}
+
+.icon-span {
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.icon-button {
+    height: 4em; 
+    width: 4em;
+    background: #FFA500;
+    color: #fff;
+}
+
+.text-span {
+    /* margin-top: 1em; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+img {
+    margin-top: 1em;
+}
